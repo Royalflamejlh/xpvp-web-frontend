@@ -9,7 +9,7 @@ const siteMetadata = {
   siteUrl: 'https://mcxpvp.com',
   siteRepo: 'https://github.com/royalflamejlh/xpvp-web-frontend',
   siteLogo: '/static/images/logo.png',
-  // socialBanner: '/static/images/twitter-card.png',
+  socialBanner: '/static/images/twitter-card.png',
   // mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'contact@mcxpvp.net',
   // github: 'https://github.com',
