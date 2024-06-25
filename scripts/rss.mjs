@@ -37,7 +37,7 @@ const generateRss = (config, posts, page = 'feed.xml') => `
 
 async function generateRSS(config, allKits, page = 'feed.xml') {
   const publishPosts = allKits.filter((post) => post.draft !== true)
-  // RSS for blog post
+  // RSS for kit page
   if (publishPosts.length > 0) {
     const rss = generateRss(config, sortPosts(publishPosts))
     writeFileSync(`./public/${page}`, rss)

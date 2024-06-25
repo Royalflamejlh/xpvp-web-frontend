@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'XPVP',
   author: 'John Howard',
   headerTitle: 'XPVP',
-  description: 'A blog created with Next.js and Tailwind.css',
+  description: 'A competitive minecraft server',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://mcxpvp.com',

@@ -48,7 +48,7 @@ concurrency:
 jobs:
   # Build job
   build:
-    name: Build Nextjs Blog
+    name: Build Nextjs Website
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

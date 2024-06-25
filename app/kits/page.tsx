@@ -7,7 +7,7 @@ const POSTS_PER_PAGE = 5
 
 export const metadata = genPageMetadata({ title: 'Kits' })
 
-export default function BlogPage() {
+export default function KitsPage() {
   const posts = allCoreContent(sortPosts(allKits))
   const pageNumber = 1
   const initialDisplayPosts = posts.slice(
