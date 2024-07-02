@@ -1,38 +1,21 @@
 ---
 title: Stomper
 date: '2016-03-08'
-tags: ['markdown', 'code', 'features']
+tags: ['Fighter']
 draft: false
-summary: Example of a markdown file with code blocks and syntax highlighting
+summary: Stomp on the opps in your Black AF1's
 ---
 
 A sample post with markdown.
 
-## Inline Highlighting
+## Item
 
-Sample of inline highlighting `sum = parseInt(num1) + parseInt(num2)`
+<Image alt="stomper" src="/static/images/kits/stomper.png" width={64} height={64} />
 
-## Code Blocks
+## Active
 
-Some Javascript code
+If you land on a player, they take the fall damage you would have taken
 
-```javascript
-var num1, num2, sum
-num1 = prompt('Enter first number')
-num2 = prompt('Enter second number')
-sum = parseInt(num1) + parseInt(num2) // "+" means "add"
-alert('Sum = ' + sum) // "+" means combine into a string
-```
+## Passive
 
-Some Python code 🐍
-
-```python
-def fib():
-    a, b = 0, 1
-    while True:            # First iteration:
-        yield a            # yield 0 to start with and then
-        a, b = b, a + b    # a will now be 1, and b will also be 1, (0 + 1)
-
-for index, fibonacci_number in zip(range(10), fib()):
-     print('{i:3}: {f:3}'.format(i=index, f=fibonacci_number))
-```
+Does not take fall damage
