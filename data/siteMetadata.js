@@ -1,7 +1,6 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
   title: 'XPVP',
-  author: 'mcxpvp.net',
   headerTitle: 'XPVP',
   description: 'A competitive minecraft server',
   language: 'en-us',

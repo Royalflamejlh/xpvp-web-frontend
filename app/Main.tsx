@@ -17,6 +17,19 @@ export default function Home({ posts }) {
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
           </p>
+          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+            Website under construction.
+          </p>
+          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+            <a
+              href="https://discord.gg/QtSSUuKSQ2"
+              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join our Discord for updates
+            </a>
+          </p>
         </div>
       </div>
       {posts.length > MAX_DISPLAY && (
