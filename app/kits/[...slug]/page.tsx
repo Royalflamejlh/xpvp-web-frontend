@@ -32,12 +32,7 @@ export async function generateMetadata({
     return
   }
 
-  const publishedAt = new Date(post.date).toISOString()
-  const modifiedAt = new Date(post.lastmod || post.date).toISOString()
-  let imageList = [siteMetadata.socialBanner]
-  if (post.images) {
-    imageList = typeof post.images === 'string' ? [post.images] : post.images
-  }
+  const imageList = [siteMetadata.socialBanner]
   const ogImages = imageList.map((img) => {
     return {
       url: img.includes('http') ? img : siteMetadata.siteUrl + img,
@@ -53,8 +48,6 @@ export async function generateMetadata({
       siteName: siteMetadata.title,
       locale: 'en_US',
       type: 'article',
-      publishedTime: publishedAt,
-      modifiedTime: modifiedAt,
       url: './',
       images: ogImages,
     },
@@ -86,7 +79,7 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
   const mainContent = coreContent(post)
   const jsonLd = post.structuredData
 
-  const Layout = layouts[post.layout || defaultLayout]
+  const Layout = layouts[defaultLayout]
 
   return (
     <>
