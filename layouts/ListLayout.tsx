@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { usePathname } from 'next/navigation'
-import { CoreContent } from 'pliny/utils/contentlayer'
+import { CoreContent } from 'utils/contentUtils'
 import type { Kits } from 'contentlayer/generated'
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'

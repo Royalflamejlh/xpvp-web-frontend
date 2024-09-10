@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import Image from '@/components/Image'
 import Bleed from 'pliny/ui/Bleed'
-import { CoreContent } from 'pliny/utils/contentlayer'
+import { CoreContent } from 'utils/contentUtils'
 import type { Kits } from 'contentlayer/generated'
 import Comments from '@/components/Comments'
 import Link from '@/components/Link'
@@ -18,23 +18,13 @@ interface LayoutProps {
 }
 
 export default function PostMinimal({ content, next, prev, children }: LayoutProps) {
-  const { slug, title, images } = content
-  const displayImage =
-    images && images.length > 0 ? images[0] : 'https://picsum.photos/seed/picsum/800/400'
-
+  const { slug, title } = content
   return (
     <SectionContainer>
       <ScrollTopAndComment />
       <article>
         <div>
           <div className="space-y-1 pb-10 text-center dark:border-gray-700">
-            <div className="w-full">
-              <Bleed>
-                <div className="relative aspect-[2/1] w-full">
-                  <Image src={displayImage} alt={title} fill className="object-cover" />
-                </div>
-              </Bleed>
-            </div>
             <div className="relative pt-10">
               <PageTitle>{title}</PageTitle>
             </div>

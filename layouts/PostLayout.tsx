@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import { CoreContent } from 'pliny/utils/contentlayer'
+import { CoreContent } from 'utils/contentUtils'
 import type { Kits } from 'contentlayer/generated'
 import Comments from '@/components/Comments'
 import Link from '@/components/Link'

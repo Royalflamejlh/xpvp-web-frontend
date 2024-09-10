@@ -1,9 +1,8 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 'use client'
 
 import { usePathname } from 'next/navigation'
 import { slug } from 'github-slugger'
-import { CoreContent } from 'pliny/utils/contentlayer'
+import { CoreContent } from 'utils/contentUtils'
 import type { Kits } from 'contentlayer/generated'
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'

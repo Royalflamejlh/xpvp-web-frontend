@@ -11,7 +11,7 @@ Add a `SearchProvider` component such as the one shown below and use it in place
 
 import { KBarSearchProvider } from 'pliny/search/KBar'
 import { useRouter } from 'next/navigation'
-import { CoreContent } from 'pliny/utils/contentlayer'
+import { CoreContent } from 'utils/contentUtils'
 import { Kits } from 'contentlayer/generated'
 
 export const SearchProvider = ({ children }) => {
