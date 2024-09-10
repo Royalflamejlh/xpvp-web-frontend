@@ -1,1 +1,27 @@
-{ "fighter": 2, "utility": 1, "ranged": 2, "untagged": 5 }
+{
+  "fighter": 1,
+  "damage": 3,
+  "support": 3,
+  "swarm": 1,
+  "trap": 1,
+  "utility": 5,
+  "teleportation": 2,
+  "control": 1,
+  "random": 1,
+  "risk": 1,
+  "stealth": 2,
+  "invisibility": 1,
+  "knockback": 1,
+  "ranged": 3,
+  "tracker": 1,
+  "healer": 1,
+  "mobility": 3,
+  "stealer": 1,
+  "tank": 1,
+  "debuff": 1,
+  "disabler": 2,
+  "precision": 1,
+  "elemental": 1,
+  "transformation": 1,
+  "lifesteal": 1
+}
