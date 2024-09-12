@@ -6,6 +6,7 @@
     "start": "next dev",
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node ./scripts/createCNAME.js",
     "serve": "next start",
     "analyze": "ANALYZE=true next build",
     "lint": "eslint --fix"
